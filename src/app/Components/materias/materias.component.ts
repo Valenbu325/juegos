@@ -11,12 +11,12 @@ import { map } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-juegos',
-  templateUrl: './juegos.component.html',
-  styleUrl: './juegos.component.css',
+  selector: 'app-layout',
+  templateUrl: './materias.component.html',
+  styleUrl: './materias.component.css',
   imports: [MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule, MatIconModule, RouterOutlet],
 })
-export class JuegosComponent {
+export class MateriasComponent {
   private readonly breakpointObserver = inject(BreakpointObserver);
 
   readonly isHandset = toSignal(
